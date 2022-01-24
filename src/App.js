@@ -13,12 +13,12 @@ function App() {
       <Navbar />
       
      <Routes>
-       {/* <Route exact path = "/" component = {about}></Route>*/}
-        <Route path = "/contact" render = {() => <Contact pagename="Contact"></Contact>}></Route>{/* We will use the Route Render method when we will partially update the component and need to pas some props. */}
-       <Route exact path="/" component = {() => <About pagename= "about" />}></Route> {/* We will use Render component method when we no need to pass any prop and when we need to create component every time. */}
-       <Route path ="/routing" component = {Navbar}></Route>
-       <Route path ="/Search/:FName/:LName" component = {Search}></Route>
-       <Route component={error1}></Route>
+       {/* <Route exact path = "/" element = {about}></Route>*/}
+        <Route path = "/contact" element = {<Contact />}></Route>{/* We will use the Route Render method when we will partially update the component and need to pas some props. */}
+       <Route exact path="/" element = {() => <About pagename= "about" />}></Route> {/* We will use Render component method when we no need to pass any prop and when we need to create component every time. */}
+       <Route path ="/routing" element = {Navbar}></Route>
+       <Route path ="/Search/:FName/:LName" element = {Search}></Route>
+       <Route element={error1}></Route>
      </Routes>
     </div>
   );
