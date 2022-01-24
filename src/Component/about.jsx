@@ -1,8 +1,12 @@
 import React from "react";
 
-const About  = () => {
-    return(
-        <h1>my name is sachin kumar sharma</h1>
+const About = (props) => {
+    console.log(props);
+    return (
+        <>
+            <h2>this is {props.pagename} page</h2>
+        </>
     )
 }
+
 export default About;
