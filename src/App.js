@@ -14,8 +14,8 @@ function App() {
       
      <Routes>
        {/* <Route exact path = "/" element = {about}></Route>*/}
-        <Route path = "/contact" element = {<Contact />}></Route>{/* We will use the Route Render method when we will partially update the component and need to pas some props. */}
-       <Route exact path="/" element = {<About pagename= "about" />}></Route> {/* We will use Render component method when we no need to pass any prop and when we need to create component every time. */}
+        <Route path = "/contact" element = {<Contact pagename= "contact" />}></Route>{/* We will use the Route Render method when we will partially update the component and need to pas some props. */}
+       <Route exact path="/" element = {<About pagename = "about" />}></Route> {/* We will use Render component method when we no need to pass any prop and when we need to create component every time. */}
        <Route path ="/routing" element = {Navbar}></Route>
        <Route path ="/Search/:FName/:LName" element = {<Search />}></Route>
        {/* <Route path ="/Search/:FName/:LName" element = {Search}></Route> */}
