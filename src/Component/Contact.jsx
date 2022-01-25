@@ -3,7 +3,7 @@ const Contact = (props) => {
 
     return (
         <>
-            <h2>hey, you are on page</h2>
+            <h2>hey, you are on {props.pagename} page </h2>
         </>
     )
 }
